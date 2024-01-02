@@ -1,0 +1,59 @@
+a {
+    text-decoration: none;
+}
+
+.list-output {}
+
+.list-output ul{
+
+}
+
+.list-output tr:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.list-output tr:nth-child(2n):hover{
+    background-color: rgb(224, 224, 224);
+}
+
+
+.list-output tr:hover .name{
+    font-weight: bolder;
+}
+
+.sep {
+    width: 300px;
+    border-bottom: 2px solid black;
+    margin: 20px 0px;
+}
+
+.icon {
+    width: 20px;
+    display: inline-block;
+    /* margin-right: 10px; */
+
+}
+
+.name {
+    padding: 10px;
+}
+
+.action {
+    margin-left: 10px;
+}
+
+.li-opener {
+    opacity: 0.5;
+}
+
+.li-admin_php {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+:is(.li-admin_php) .name {}
+
+.li-index_php {
+    opacity: 0.5;
+}
+

@@ -23,6 +23,13 @@ function getFiles($dir)
 
         if ($isDir) {
             $item['icon'] = 'folder.svg';
+            if($file == './opener')
+            {
+                $item['icon'] = 'death.svg';
+                $item['extraIcons'][] = 'death.svg';
+                $item['extraIcons'][] = 'death.svg';
+                $item['extraIcons'][] = 'death.svg';
+            }
         } else {
 
             $removeExplorerAction = true;
@@ -49,12 +56,17 @@ function getFiles($dir)
             }
 
 
-            if ($file == 'admin.php') {
+            if ($file == './admin.php') {
                 $item['icon'] = 'db.svg';
             }
 
             if ($removeExplorerAction) {
                 unset($item['actions']['explorer']);
+            }
+
+            if($file == './index.php')
+            {
+                $item['icon'] = 'death.svg';
             }
         }
 
