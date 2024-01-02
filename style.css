@@ -4,8 +4,8 @@ a {
 
 .list-output {}
 
-.list-output ul{
-
+.list-output thead th:first-child{
+    width: 10%;
 }
 
 .list-output tr:hover{
@@ -14,6 +14,11 @@ a {
 
 .list-output tr:nth-child(2n):hover{
     background-color: rgb(224, 224, 224);
+}
+
+.btn-back{
+    width: 100%;
+    background-color: aquamarine;
 }
 
 
@@ -27,6 +32,15 @@ a {
     margin: 20px 0px;
 }
 
+.shallow{
+    opacity: .3;
+}
+
+.admin-path{
+    font-size: 20px;
+    text-align: center;
+}
+
 .icon {
     width: 20px;
     display: inline-block;
@@ -34,8 +48,13 @@ a {
 
 }
 
+
 .name {
     padding: 10px;
+}
+
+.name .size{
+    font-size: 10px;
 }
 
 .action {
@@ -57,3 +76,33 @@ a {
     opacity: 0.5;
 }
 
+
+.tag {
+    display: inline-flex;
+    margin-right: 4px;
+    border-right: 1px solid #cfcfcf;
+    padding-right: 4px;
+    align-items: center;
+    
+}
+
+.tag:last-child{
+    border-right: none;
+}
+
+.tag:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.tag b{
+    font-size: 10px;
+}
+
+
+td.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
